@@ -52,6 +52,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "business_partner": {
+      "via": "products",
+      "model": "business-partner"
     }
   }
 }

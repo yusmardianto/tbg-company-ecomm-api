@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "business_partners",
+  "collectionName": "carousels",
   "info": {
-    "name": "Business Partner",
-    "description": ""
+    "name": "Carousel"
   },
   "options": {
     "increments": true,
@@ -11,14 +10,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "Description": {
-      "type": "richtext"
-    },
     "img": {
       "collection": "file",
       "via": "related",
@@ -29,10 +20,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "products": {
-      "collection": "product",
-      "via": "business_partner"
     }
   }
 }

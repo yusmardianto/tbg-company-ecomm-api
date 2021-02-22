@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "business_partners",
+  "collectionName": "companies",
   "info": {
-    "name": "Business Partner",
-    "description": ""
+    "name": "Company"
   },
   "options": {
     "increments": true,
@@ -12,15 +11,10 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "Description": {
-      "type": "richtext"
+      "type": "string"
     },
     "img": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -29,10 +23,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "products": {
-      "collection": "product",
-      "via": "business_partner"
     }
   }
 }
