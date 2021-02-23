@@ -54,8 +54,11 @@
       "required": false
     },
     "business_partner": {
-      "via": "products",
-      "model": "business-partner"
+      "model": "business-partner",
+      "via": "products"
+    },
+    "stock": {
+      "type": "biginteger"
     }
   }
 }

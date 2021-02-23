@@ -31,8 +31,8 @@
       "required": false
     },
     "products": {
-      "collection": "product",
-      "via": "business_partner"
+      "via": "business_partner",
+      "collection": "product"
     }
   }
 }
