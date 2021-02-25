@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "carrers",
   "info": {
-    "name": "Carrer"
+    "name": "Carrer",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -31,6 +32,21 @@
       "required": true
     },
     "category": {
+      "type": "enumeration",
+      "enum": [
+        "S1",
+        "D3",
+        "SMA"
+      ]
+    },
+    "start_regis": {
+      "type": "date",
+      "required": true
+    },
+    "until_regis": {
+      "type": "date"
+    },
+    "name_description": {
       "type": "string"
     }
   }
