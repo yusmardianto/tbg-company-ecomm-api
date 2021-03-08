@@ -42,23 +42,15 @@
     "accessories": {
       "type": "richtext"
     },
-    "film": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "business_partner": {
       "model": "business-partner",
       "via": "products"
     },
     "stock": {
       "type": "biginteger"
+    },
+    "film": {
+      "type": "richtext"
     }
   }
 }
