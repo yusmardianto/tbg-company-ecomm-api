@@ -29,10 +29,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "products": {
-      "via": "business_partner",
-      "collection": "product"
     }
   }
 }

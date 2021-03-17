@@ -31,7 +31,7 @@
       "required": true
     },
     "price": {
-      "type": "biginteger"
+      "type": "float"
     },
     "overview": {
       "type": "richtext"
@@ -42,15 +42,26 @@
     "accessories": {
       "type": "richtext"
     },
-    "business_partner": {
-      "model": "business-partner",
-      "via": "products"
-    },
     "stock": {
       "type": "biginteger"
     },
     "film": {
       "type": "richtext"
+    },
+    "categories": {
+      "type": "enumeration",
+      "enum": [
+        "matic",
+        "maxi",
+        "naked",
+        "sport",
+        "offroad",
+        "moped",
+        "monsterenergy",
+        "cbu",
+        "atv",
+        "powerproduct"
+      ]
     }
   }
 }

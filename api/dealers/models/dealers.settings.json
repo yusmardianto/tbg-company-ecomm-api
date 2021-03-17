@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dealers",
+  "info": {
+    "name": "Dealers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "kota_dealer": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "telp": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "location": {
+      "type": "richtext"
+    }
+  }
+}

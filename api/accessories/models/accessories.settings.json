@@ -19,7 +19,7 @@
       "type": "richtext"
     },
     "price": {
-      "type": "biginteger"
+      "type": "float"
     },
     "part_code": {
       "type": "string"
