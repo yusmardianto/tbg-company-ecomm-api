@@ -48,6 +48,10 @@
     },
     "name_description": {
       "type": "string"
+    },
+    "business_partner": {
+      "model": "business-partner",
+      "via": "carrers"
     }
   }
 }

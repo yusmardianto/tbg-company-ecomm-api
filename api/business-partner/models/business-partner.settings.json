@@ -29,6 +29,22 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "carousels": {
+      "via": "business_partner",
+      "collection": "carousel"
+    },
+    "latest_news": {
+      "via": "business_partner",
+      "collection": "latest-news"
+    },
+    "products": {
+      "via": "business_partner",
+      "collection": "product"
+    },
+    "carrers": {
+      "via": "business_partner",
+      "collection": "carrer"
     }
   }
 }
