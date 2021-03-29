@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partners_login_states",
+  "info": {
+    "name": "PartnersLoginState"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "partners_login_states"
+    },
+    "business_partner": {
+      "model": "business-partner"
+    }
+  }
+}
