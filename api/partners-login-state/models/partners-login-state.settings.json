@@ -11,9 +11,9 @@
   },
   "attributes": {
     "user": {
+      "via": "partners_login_states",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "partners_login_states"
+      "model": "user"
     },
     "business_partner": {
       "model": "business-partner"
