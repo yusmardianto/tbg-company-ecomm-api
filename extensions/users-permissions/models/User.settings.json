@@ -63,17 +63,13 @@
       "collection": "partners-login-state",
       "via": "user"
     },
-    "first_name": {
-      "type": "string"
+    "firstName": {
+      "type": "string",
+      "required": true
     },
-    "last_name": {
-      "type": "string"
-    },
-    "nohp": {
-      "type": "biginteger"
-    },
-    "address": {
-      "type": "text"
+    "lastName": {
+      "type": "string",
+      "required": true
     }
   }
 }
