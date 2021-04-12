@@ -60,8 +60,20 @@
       "configurable": false
     },
     "partners_login_states": {
-      "via": "user",
-      "collection": "partners-login-state"
+      "collection": "partners-login-state",
+      "via": "user"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "nohp": {
+      "type": "biginteger"
+    },
+    "address": {
+      "type": "text"
     }
   }
 }

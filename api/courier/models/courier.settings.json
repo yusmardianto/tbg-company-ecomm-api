@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "couriers",
+  "info": {
+    "name": "Courier"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "products": {
+      "via": "couriers",
+      "collection": "product"
+    }
+  }
+}

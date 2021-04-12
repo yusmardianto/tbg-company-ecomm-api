@@ -66,6 +66,11 @@
     "business_partner": {
       "model": "business-partner",
       "via": "products"
+    },
+    "couriers": {
+      "collection": "courier",
+      "via": "products",
+      "dominant": true
     }
   }
 }
