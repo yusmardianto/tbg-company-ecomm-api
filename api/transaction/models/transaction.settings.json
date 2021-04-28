@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "name": "Transaction"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "product_order": {
+      "type": "string"
+    },
+    "product_name": {
+      "type": "string"
+    },
+    "product_quantity": {
+      "type": "biginteger"
+    },
+    "product_price": {
+      "type": "biginteger"
+    },
+    "product_color": {
+      "type": "string"
+    },
+    "product_courier": {
+      "type": "string"
+    },
+    "cust_name": {
+      "type": "string"
+    },
+    "cust_telp": {
+      "type": "string"
+    },
+    "cust_address": {
+      "type": "string"
+    },
+    "note": {
+      "type": "text"
+    },
+    "product_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

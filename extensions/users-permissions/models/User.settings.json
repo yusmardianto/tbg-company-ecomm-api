@@ -70,6 +70,12 @@
     "lastName": {
       "type": "string",
       "required": true
+    },
+    "telp": {
+      "type": "biginteger"
+    },
+    "address": {
+      "type": "richtext"
     }
   }
 }
