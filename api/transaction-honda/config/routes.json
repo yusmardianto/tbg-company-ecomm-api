@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transaction-hondas",
+      "handler": "transaction-honda.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transaction-hondas/count",
+      "handler": "transaction-honda.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transaction-hondas/:id",
+      "handler": "transaction-honda.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transaction-hondas",
+      "handler": "transaction-honda.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transaction-hondas/:id",
+      "handler": "transaction-honda.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transaction-hondas/:id",
+      "handler": "transaction-honda.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

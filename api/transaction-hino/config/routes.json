@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transaction-hinos",
+      "handler": "transaction-hino.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transaction-hinos/count",
+      "handler": "transaction-hino.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transaction-hinos/:id",
+      "handler": "transaction-hino.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transaction-hinos",
+      "handler": "transaction-hino.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transaction-hinos/:id",
+      "handler": "transaction-hino.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transaction-hinos/:id",
+      "handler": "transaction-hino.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "transactions",
+  "collectionName": "transaction_hinos",
   "info": {
-    "name": "Transaction",
-    "description": ""
+    "name": "TransactionHino"
   },
   "options": {
     "increments": true,
@@ -16,6 +15,17 @@
     },
     "product_name": {
       "type": "string"
+    },
+    "product_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     },
     "product_quantity": {
       "type": "biginteger"
@@ -33,28 +43,17 @@
       "type": "string"
     },
     "cust_telp": {
-      "type": "string"
+      "type": "biginteger"
     },
     "cust_address": {
-      "type": "string"
+      "type": "text"
     },
     "note": {
       "type": "text"
     },
-    "product_img": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "status": {
       "model": "status",
-      "via": "transactions"
+      "via": "transaction_hinos"
     }
   }
 }

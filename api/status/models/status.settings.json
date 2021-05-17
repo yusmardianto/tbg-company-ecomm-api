@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "statuses",
+  "info": {
+    "name": "Status"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "status_id": {
+      "type": "string"
+    },
+    "status_description": {
+      "type": "string"
+    },
+    "transactions": {
+      "via": "status",
+      "collection": "transaction"
+    },
+    "transaction_suzukis": {
+      "via": "status",
+      "collection": "transaction-suzuki"
+    },
+    "transaction_hondas": {
+      "via": "status",
+      "collection": "transaction-honda"
+    },
+    "transaction_hinos": {
+      "via": "status",
+      "collection": "transaction-hino"
+    }
+  }
+}

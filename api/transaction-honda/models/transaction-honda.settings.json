@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "transactions",
+  "collectionName": "transaction_hondas",
   "info": {
-    "name": "Transaction",
-    "description": ""
+    "name": "TransactionHonda"
   },
   "options": {
     "increments": true,
@@ -36,7 +35,7 @@
       "type": "string"
     },
     "cust_address": {
-      "type": "string"
+      "type": "text"
     },
     "note": {
       "type": "text"
@@ -54,7 +53,7 @@
     },
     "status": {
       "model": "status",
-      "via": "transactions"
+      "via": "transaction_hondas"
     }
   }
 }

@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "transactions",
+  "collectionName": "transaction_suzukis",
   "info": {
-    "name": "Transaction",
-    "description": ""
+    "name": "TransactionSuzuki"
   },
   "options": {
     "increments": true,
@@ -11,6 +10,18 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "cust_name": {
+      "type": "string"
+    },
+    "cust_telp": {
+      "type": "biginteger"
+    },
+    "cust_address": {
+      "type": "text"
+    },
+    "note": {
+      "type": "text"
+    },
     "order_id": {
       "type": "string"
     },
@@ -29,18 +40,6 @@
     "product_courier": {
       "type": "string"
     },
-    "cust_name": {
-      "type": "string"
-    },
-    "cust_telp": {
-      "type": "string"
-    },
-    "cust_address": {
-      "type": "string"
-    },
-    "note": {
-      "type": "text"
-    },
     "product_img": {
       "model": "file",
       "via": "related",
@@ -54,7 +53,7 @@
     },
     "status": {
       "model": "status",
-      "via": "transactions"
+      "via": "transaction_suzukis"
     }
   }
 }
