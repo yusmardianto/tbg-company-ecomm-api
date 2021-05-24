@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "dealers",
   "info": {
-    "name": "Dealers"
+    "name": "Dealers",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -27,6 +28,24 @@
     },
     "location": {
       "type": "richtext"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "region": {
+      "type": "enumeration",
+      "enum": [
+        "Sumsel",
+        "Bengkulu"
+      ]
     }
   }
 }

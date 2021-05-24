@@ -35,7 +35,7 @@
       "plugin": "upload",
       "required": false
     },
-    "category": {
+    "category_sparepart": {
       "type": "enumeration",
       "enum": [
         "YGP",
@@ -47,39 +47,6 @@
     },
     "stock": {
       "type": "string"
-    },
-    "img_relate1": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "img_relate2": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "img_relate3": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
     }
   }
 }
