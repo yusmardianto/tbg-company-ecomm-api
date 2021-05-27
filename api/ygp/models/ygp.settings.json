@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "accessories",
+  "collectionName": "ygps",
   "info": {
-    "name": "accessories",
-    "description": ""
+    "name": "YGP"
   },
   "options": {
     "increments": true,
@@ -12,17 +11,19 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "richtext"
-    },
-    "price": {
-      "type": "float"
+      "type": "string"
     },
     "part_code": {
       "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "stock": {
+      "type": "biginteger"
+    },
+    "description": {
+      "type": "richtext"
     },
     "img": {
       "model": "file",
@@ -34,9 +35,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "stock": {
-      "type": "string"
     }
   }
 }

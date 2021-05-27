@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/yamalubes",
+      "handler": "yamalube.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/yamalubes/count",
+      "handler": "yamalube.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/yamalubes/:id",
+      "handler": "yamalube.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/yamalubes",
+      "handler": "yamalube.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/yamalubes/:id",
+      "handler": "yamalube.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/yamalubes/:id",
+      "handler": "yamalube.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
