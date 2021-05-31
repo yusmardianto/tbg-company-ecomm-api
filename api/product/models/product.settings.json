@@ -33,13 +33,7 @@
     "price": {
       "type": "float"
     },
-    "overview": {
-      "type": "richtext"
-    },
-    "specification": {
-      "type": "richtext"
-    },
-    "accessories": {
+    "overview1": {
       "type": "richtext"
     },
     "stock": {
@@ -71,6 +65,155 @@
       "collection": "courier",
       "via": "products",
       "dominant": true
+    },
+    "img_overview1": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "overview2": {
+      "type": "richtext"
+    },
+    "img_overview2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "overview3": {
+      "type": "richtext"
+    },
+    "img_overview3": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "overview4": {
+      "type": "richtext"
+    },
+    "img_overview4": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "overview5": {
+      "type": "richtext"
+    },
+    "img_overview5": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "overview6": {
+      "type": "richtext"
+    },
+    "img_overview6": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "overview7": {
+      "type": "richtext"
+    },
+    "img_overview7": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "overview8": {
+      "type": "richtext"
+    },
+    "img_overview8": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "overview9": {
+      "type": "richtext"
+    },
+    "img_overview9": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "overview10": {
+      "type": "richtext"
+    },
+    "img_overview10": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "spesifikasi_mesin": {
+      "type": "richtext"
+    },
+    "spesifikasi_dimensi": {
+      "type": "richtext"
+    },
+    "spesifikasi_rangka": {
+      "type": "richtext"
+    },
+    "spesifikasi_kelistrikan": {
+      "type": "richtext"
     }
   }
 }
