@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "template_emails",
+  "info": {
+    "name": "TemplateEmail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "template_name": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "html": {
+      "type": "text"
+    }
+  }
+}
