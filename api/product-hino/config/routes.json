@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/product-hinos",
+      "handler": "product-hino.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-hinos/count",
+      "handler": "product-hino.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-hinos/:id",
+      "handler": "product-hino.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-hinos",
+      "handler": "product-hino.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/product-hinos/:id",
+      "handler": "product-hino.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/product-hinos/:id",
+      "handler": "product-hino.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

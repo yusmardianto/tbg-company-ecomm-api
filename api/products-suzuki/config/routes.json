@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/products-suzukis",
+      "handler": "products-suzuki.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/products-suzukis/count",
+      "handler": "products-suzuki.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/products-suzukis/:id",
+      "handler": "products-suzuki.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/products-suzukis",
+      "handler": "products-suzuki.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/products-suzukis/:id",
+      "handler": "products-suzuki.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/products-suzukis/:id",
+      "handler": "products-suzuki.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

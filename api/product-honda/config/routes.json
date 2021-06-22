@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/product-hondas",
+      "handler": "product-honda.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-hondas/count",
+      "handler": "product-honda.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-hondas/:id",
+      "handler": "product-honda.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-hondas",
+      "handler": "product-honda.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/product-hondas/:id",
+      "handler": "product-honda.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/product-hondas/:id",
+      "handler": "product-honda.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

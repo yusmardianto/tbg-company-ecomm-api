@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_hinos",
+  "info": {
+    "name": "ProductHino",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "price1": {
+      "type": "biginteger"
+    },
+    "price2": {
+      "type": "biginteger"
+    },
+    "stock": {
+      "type": "biginteger"
+    },
+    "img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

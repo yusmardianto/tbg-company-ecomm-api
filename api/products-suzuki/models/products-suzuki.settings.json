@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products_suzukis",
+  "info": {
+    "name": "ProductSuzuki",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price1": {
+      "type": "biginteger"
+    },
+    "stock": {
+      "type": "biginteger"
+    },
+    "img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "price2": {
+      "type": "biginteger"
+    },
+    "price": {
+      "type": "biginteger"
+    }
+  }
+}
