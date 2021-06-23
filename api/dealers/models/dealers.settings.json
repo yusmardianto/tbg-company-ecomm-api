@@ -46,6 +46,13 @@
         "Sumsel",
         "Bengkulu"
       ]
+    },
+    "dealer_status": {
+      "type": "enumeration",
+      "enum": [
+        "Dealer_3S",
+        "Dealer_YPM"
+      ]
     }
   }
 }

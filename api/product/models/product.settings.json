@@ -214,6 +214,15 @@
     },
     "spesifikasi_kelistrikan": {
       "type": "richtext"
+    },
+    "otr_price_sumsel": {
+      "type": "biginteger"
+    },
+    "otr_price_palembang": {
+      "type": "biginteger"
+    },
+    "otr_price_bengkulu": {
+      "type": "biginteger"
     }
   }
 }
