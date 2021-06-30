@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/yg-parts",
+      "handler": "yg-part.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/yg-parts/count",
+      "handler": "yg-part.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/yg-parts/:id",
+      "handler": "yg-part.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/yg-parts",
+      "handler": "yg-part.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/yg-parts/:id",
+      "handler": "yg-part.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/yg-parts/:id",
+      "handler": "yg-part.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

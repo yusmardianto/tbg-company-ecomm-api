@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "ygps",
+  "collectionName": "yg_parts",
   "info": {
-    "name": "YGP_Unit",
+    "name": "YGPart",
     "description": ""
   },
   "options": {
@@ -13,18 +13,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "part_code": {
-      "type": "string"
-    },
-    "price": {
-      "type": "biginteger"
-    },
-    "stock": {
-      "type": "biginteger"
-    },
-    "description": {
-      "type": "richtext"
     },
     "img": {
       "model": "file",
@@ -37,20 +25,17 @@
       "plugin": "upload",
       "required": false
     },
-    "otr_price_sumsel": {
+    "ygp_units": {
+      "collection": "ygp",
+      "via": "yg_part"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price1": {
       "type": "biginteger"
     },
-    "otr_price_palembang": {
-      "type": "biginteger"
-    },
-    "otr_price_bengkulu": {
-      "type": "biginteger"
-    },
-    "yg_part": {
-      "via": "ygp_units",
-      "model": "yg-part"
-    },
-    "berat": {
+    "price2": {
       "type": "biginteger"
     }
   }

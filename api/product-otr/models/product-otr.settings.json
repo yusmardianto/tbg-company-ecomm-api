@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_otrs",
+  "info": {
+    "name": "Product_OTR",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "product": {
+      "model": "product",
+      "via": "product_otrs"
+    },
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -223,6 +223,16 @@
     },
     "otr_price_bengkulu": {
       "type": "biginteger"
+    },
+    "price1": {
+      "type": "biginteger"
+    },
+    "price2": {
+      "type": "biginteger"
+    },
+    "product_otrs": {
+      "via": "product",
+      "collection": "product-otr"
     }
   }
 }
