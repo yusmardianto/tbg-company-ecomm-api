@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/product-image-colors",
+      "handler": "product-image-color.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-image-colors/count",
+      "handler": "product-image-color.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/product-image-colors/:id",
+      "handler": "product-image-color.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/product-image-colors",
+      "handler": "product-image-color.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/product-image-colors/:id",
+      "handler": "product-image-color.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/product-image-colors/:id",
+      "handler": "product-image-color.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

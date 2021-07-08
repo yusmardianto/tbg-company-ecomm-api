@@ -215,15 +215,6 @@
     "spesifikasi_kelistrikan": {
       "type": "richtext"
     },
-    "otr_price_sumsel": {
-      "type": "biginteger"
-    },
-    "otr_price_palembang": {
-      "type": "biginteger"
-    },
-    "otr_price_bengkulu": {
-      "type": "biginteger"
-    },
     "price1": {
       "type": "biginteger"
     },
@@ -231,8 +222,12 @@
       "type": "biginteger"
     },
     "product_otrs": {
+      "collection": "product-otr",
+      "via": "product"
+    },
+    "product_image_colors": {
       "via": "product",
-      "collection": "product-otr"
+      "collection": "product-image-color"
     }
   }
 }

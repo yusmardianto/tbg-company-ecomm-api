@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_image_colors",
+  "info": {
+    "name": "Product_Image_Color",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "product": {
+      "model": "product",
+      "via": "product_image_colors"
+    }
+  }
+}
