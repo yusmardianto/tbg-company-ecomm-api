@@ -42,6 +42,9 @@
     },
     "end_on": {
       "type": "date"
+    },
+    "wa": {
+      "type": "string"
     }
   }
 }
