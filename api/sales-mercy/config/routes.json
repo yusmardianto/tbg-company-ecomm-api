@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sales-mercies",
+      "handler": "sales-mercy.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sales-mercies/count",
+      "handler": "sales-mercy.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sales-mercies/:id",
+      "handler": "sales-mercy.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sales-mercies",
+      "handler": "sales-mercy.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sales-mercies/:id",
+      "handler": "sales-mercy.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sales-mercies/:id",
+      "handler": "sales-mercy.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
