@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "checkouts",
+  "info": {
+    "name": "Checkout"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "product_name": {
+      "type": "string"
+    },
+    "product_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "product_color": {
+      "type": "string"
+    },
+    "product_quantity": {
+      "type": "string"
+    },
+    "product_total": {
+      "type": "biginteger"
+    },
+    "transaction_id": {
+      "type": "string"
+    }
+  }
+}

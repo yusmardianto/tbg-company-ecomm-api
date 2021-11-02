@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "name": "Cart",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "product_name": {
+      "type": "string"
+    },
+    "product_price": {
+      "type": "biginteger"
+    },
+    "product_color": {
+      "type": "string"
+    },
+    "product_otr": {
+      "type": "string"
+    },
+    "product_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
