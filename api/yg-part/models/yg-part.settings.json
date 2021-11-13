@@ -37,6 +37,9 @@
     },
     "price2": {
       "type": "biginteger"
+    },
+    "discount": {
+      "type": "decimal"
     }
   }
 }

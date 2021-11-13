@@ -58,6 +58,9 @@
     },
     "otr_price_bengkulu": {
       "type": "biginteger"
+    },
+    "discount": {
+      "type": "decimal"
     }
   }
 }

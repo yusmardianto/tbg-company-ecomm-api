@@ -41,20 +41,27 @@
     "note": {
       "type": "text"
     },
-    "product_img": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "status": {
       "model": "status",
       "via": "transactions"
+    },
+    "cust_email": {
+      "type": "email"
+    },
+    "cust_postCode": {
+      "type": "string"
+    },
+    "cust_village": {
+      "type": "string"
+    },
+    "cust_district": {
+      "type": "string"
+    },
+    "cust_city": {
+      "type": "string"
+    },
+    "cust_province": {
+      "type": "string"
     }
   }
 }

@@ -26,8 +26,8 @@
       "required": false
     },
     "product": {
-      "model": "product",
-      "via": "product_image_colors"
+      "via": "product_image_colors",
+      "model": "product"
     }
   }
 }

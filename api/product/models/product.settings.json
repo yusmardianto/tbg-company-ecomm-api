@@ -226,8 +226,11 @@
       "via": "product"
     },
     "product_image_colors": {
-      "via": "product",
-      "collection": "product-image-color"
+      "collection": "product-image-color",
+      "via": "product"
+    },
+    "discount": {
+      "type": "decimal"
     }
   }
 }
